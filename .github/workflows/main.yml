@@ -9,5 +9,4 @@ jobs:
     steps:
       - name: Show environment v1
         run: test
-      - name: Show ref v1
-        run: echo "===============> Version from $GITHUB_REF"
+
