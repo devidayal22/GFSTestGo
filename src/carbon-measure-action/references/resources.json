@@ -1,0 +1,42 @@
+[
+    {
+      "cloud": "azure",
+      "resources": [
+        {
+            "type":"Microsoft.Compute/virtualMachines",
+
+            "sizes":[
+
+                {
+
+                    "name":"Standard_A2_V2",
+
+                    "wattage":165
+
+                },
+                {
+
+                    "name":"Standard_NC6s_v3",
+
+                    "wattage":250
+
+                },
+				{
+
+                    "name":"Standard_D2s_v3",
+
+                    "wattage":165
+
+                },
+				{
+
+                    "name":"Standard_F2",
+
+                    "wattage":250
+
+                }
+            ]
+        }
+    ]
+    }
+]
