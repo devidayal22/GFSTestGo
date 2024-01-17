@@ -22,7 +22,7 @@ func main() {
 	var Totalco2perkwh float64
 	var count int
 	var qry TypCloudResourceQuery
-
+	githubNoticeMessage(infraFileName)
 	githubNoticeMessage("devidayal: Starting carbon measure action.")
 
 	// TODO: For terraform, we might need to accept a list of multiple files

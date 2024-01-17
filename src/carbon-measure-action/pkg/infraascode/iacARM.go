@@ -3,14 +3,14 @@ package infraascode
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"os"
 	"strings"
 )
 
 var data TypARM
 
 func readJSON(jsonPath string) TypARM {
-	file, _ := ioutil.ReadFile(jsonPath)
+	file, _ := os.ReadFile(jsonPath)
 	var arm TypARM
 	err := json.Unmarshal([]byte(file), &arm)
 	if err != nil {

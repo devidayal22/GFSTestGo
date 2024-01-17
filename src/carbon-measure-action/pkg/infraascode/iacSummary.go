@@ -12,6 +12,7 @@ func GetIACSummary(q TypIACQuery) []TypSummary {
 		// Summarize ARM JSON file to resource and location
 		// TODO: Need to retrieve Variables and Parameters values inside resource type "Microsoft.Resources/deployments"
 		summary = armSummary(q.Filename)
+		fmt.Println(" arm caes*****************************************")
 		break
 	case "pulumi":
 		files := strings.Split(q.Filename, ",")
