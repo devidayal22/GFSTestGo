@@ -12,7 +12,7 @@ import (
 
 func main() {
 	infraFileType := os.Getenv("IACType")
-	infraFileName := os.Getenv("IACTemplateFile")
+	//infraFileName := os.Getenv("IACTemplateFile")
 	electricityMapZoneKey := os.Getenv("ELECTRICITY_MAP_AUTH_TOKEN")
 	cloudProvider := os.Getenv("CloudProvider")
 	CarbonRateProvider := os.Getenv("CARBON_RATE_PROVIDER") // electricitymap or watttime
@@ -22,6 +22,7 @@ func main() {
 	var Totalco2perkwh float64
 	var count int
 	var qry TypCloudResourceQuery
+	infraFileName := "references/azuredeploy.json"
 	githubNoticeMessage(infraFileName)
 	githubNoticeMessage("devidayal: Starting carbon measure action.")
 
